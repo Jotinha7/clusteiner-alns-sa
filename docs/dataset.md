@@ -1,6 +1,6 @@
 # Dataset – Clustered Steiner Tree (CluSteiner)
 
-Este documento descreve o dataset usado neste TCC, extraído do repositório
+Este documento descreve o dataset usado, extraído do repositório
 **CluSteiner-Dataset**, publicado pelos autores do artigo:
 
 > *An online transfer learning based multifactorial evolutionary algorithm for solving the clustered Steiner tree problem (2024).*
