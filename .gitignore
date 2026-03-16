@@ -1,0 +1,17 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# build
+build/
+dist/
+*.o
+*.out
+
+# vscode
+.vscode/
+
+# python packaging (gerado automaticamente)
+*.egg-info/
+
