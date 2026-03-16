@@ -1,6 +1,6 @@
 # Fundamentos: Problema de Árvore de Steiner Clusterizada (CluSteiner)
 
-Este capítulo descreve os conceitos básicos necessários para entender o problema que o TCC aborda e a heurística de referência usada no artigo base.
+Conceitos básicos necessários para entender o problema e a heurística de referência usada no artigo base.
 
 ---
 
@@ -31,7 +31,7 @@ No problema *Clustered Steiner Tree*, o conjunto de terminais $R$ é particionad
 - $R_1 \cup R_2 \cup \dots \cup R_h = R$;
 - $R_i \cap R_j = \emptyset$ para $i \neq j$.
 
-Cada $R_k$ é um cluster de terminais. Em todas as instâncias do dataset usado neste TCC, todos os vértices de $R$ são terminais obrigatórios, ou seja, a solução precisa conter todos os vértices de todos os clusters.
+Cada $R_k$ é um cluster de terminais. Em todas as instâncias do dataset usado, todos os vértices de $R$ são terminais obrigatórios, ou seja, a solução precisa conter todos os vértices de todos os clusters.
 
 ### 1.4 Árvore de Steiner clusterizada
 
@@ -55,7 +55,7 @@ O problema de Árvore de Steiner Clusterizada (CluSteiner) é definido como:
 
 ## 2. Restrição de disjunção no CluSteiner
 
-Nesta seção vamos reescrever a **restrição de disjunção** exatamente na forma em que o problema é definido no artigo base do CluSteiner e, em seguida, mostrar como ela aparece na modelagem matemática que vamos usar no TCC.
+Nesta seção vamos reescrever a **restrição de disjunção** exatamente na forma em que o problema é definido no artigo base do CluSteiner e, em seguida, mostrar como ela aparece na modelagem matemática que vamos usar.
 
 ### 2.1 Definição no artigo base
 
@@ -106,7 +106,7 @@ Isso vale tanto para vértices de Steiner quanto, indiretamente, para a forma co
 
 Essa é a forma em que a *restrição de disjunção* aparece na formulação do artigo: ela é embutida na frase “todas as árvores locais são mutuamente exclusivas”.
 
-### 2.2 Regra de disjunção na modelagem do TCC
+### 2.2 Regra de disjunção na modelagem
 
 Para usar essa ideia em um modelo de Programação Inteira/MIP, introduzimos variáveis binárias que marcam em qual árvore local cada vértice está.
 
@@ -149,7 +149,7 @@ Juntas, (Disjunção-1) e (Disjunção-2) codificam, em forma linear, a mesma id
 1.  Todos os vértices de um cluster aparecem em sua árvore local;
 2.  Nenhum vértice é compartilhado entre árvores locais de clusters diferentes.
 
-Em resumo, a **restrição de disjunção** do TCC será representada pelas seguintes condições:
+Em resumo, a **restrição de disjunção** será representada pelas seguintes condições:
 
 $$
 \begin{aligned}
@@ -159,7 +159,7 @@ $$
 \end{aligned}
 $$
 
-Essas equações são a forma “oficial” da restrição de disjunção na formulação matemática do TCC, coerente com a definição de que as árvores locais $T_i$ devem ser mutuamente exclusivas.
+Essas equações são a forma “oficial” da restrição de disjunção na formulação matemática, coerente com a definição de que as árvores locais $T_i$ devem ser mutuamente exclusivas.
 
 ---
 
